@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Sogoe UI", tahoma, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  line-height: 1.8;
+  direction: rtl;
+  text-align: right;
+}
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background: #1e293b;
+  border-bottom: 3px solid #3b82f6;
+}
+.avatar {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  animation: pulse 2s infinite;
+}
+header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+header p {
+  color: #94a3b8;
+  font-size: 1.2rem;
+}
+nav {
+  text-align: center;
+  background: #1e293b;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #334155;
+}
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+nav a:hover {
+  color: #3b82f6;
+}
+nva a i {
+  margin-left: 8px;
+}
+main {
+  padding: 20px;
+}
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
+}
+h2 {
+  margin-bottom: 20px;
+  color: #3b82f6;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+h2 i {
+  margin: left 12px;
+}
+#skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+#skills li {
+  background: #334155;
+  color: #f1f5f9;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid#4b5563;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+#skills li {
+  margin-left: 8px;
+  color: #3b82f6;
+}
+#skills li:hover {
+  margin-left: 6px;
+  color: #3b82f6;
+}
+#skills li :hover {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  transform: translatey(-3px);
+}
+#conttact p {
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+.social-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.social-item {
+  background: #111827;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: 1px social #334155;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+.social-item:hover {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+.social-item i {
+  margin-left: 8px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.cyber-green-text {
+  color: hsl(160, 35%, 10%) !important;
+}
+nva a.nva-new-item:hover {
+  color: #060c0a;
+}
+.section-new {
+  border: 1px solid #09130f;
+  box-shadow: 0 10px 25px -5px rgab(16, 185, 129, 0.15);
+}
+#skills li.skill-new {
+  border-color: #08110e;
+}
+#skills li.skill-new i {
+  color: #0f1f19;
+}
+#skills li.skill-new:hover {
+  background: #162e26;
+  border-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+  gap: 20px;
+  margin-top: 15px;
+}
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.project-card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  border-right: 4px solid #10b981;
+}
+.project-card h3 {
+  color: #f1f5f9;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.project-card p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+.edu-list {
+  padding-right: 20px;
+}
+.edu-list li {
+  margin-bottom: 10px;
+  color: #cbd5e1;
+  list-style-type: square;
+}
+.social-new {
+  border-color: #000000;
+}
+.section-new:hover {
+  background: lab(0% 0 0);
+  border-color: #000000;
+  transform: scale(1.05);
+}
+.footer-new {
+  text-align: center;
+  padding: 30px;
+  color: #2a528b;
+  font-size: 0.9rem;
+  background: #0f172a;
+  border-top: 1px solid #000000;
+  margin-top: 5px;
+}
